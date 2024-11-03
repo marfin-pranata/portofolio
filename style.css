@@ -1,0 +1,308 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+    background: #121212;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #121212;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Keyframes untuk Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Header dengan Animasi */
+header {
+    background: #333;
+    padding: 10px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #00c6ff;
+}
+
+/* Hero Section */
+#hero h2 {
+    animation: zoomIn 1.2s ease;
+}
+
+#hero p {
+    animation: fadeIn 1.5s ease 0.5s;
+}
+
+.cta-button {
+    animation: slideInUp 1.5s ease 1s;
+}
+
+/* About Me */
+#about {
+    animation: fadeIn 1.5s ease;
+}
+
+.profile-photo {
+    animation: zoomIn 1.2s ease 0.5s;
+}
+
+/* Services */
+.service-item {
+    animation: slideInLeft 1.2s ease;
+    opacity: 0;
+}
+
+.service-item:nth-child(1) {
+    animation-delay: 0.2s;
+    opacity: 1;
+}
+
+.service-item:nth-child(2) {
+    animation-delay: 0.4s;
+    opacity: 1;
+}
+
+/* Portfolio */
+.portfolio-item {
+    animation: zoomIn 1.2s ease;
+    opacity: 0;
+}
+
+.portfolio-item:nth-child(1) {
+    animation-delay: 0.3s;
+    opacity: 1;
+}
+
+.portfolio-item:nth-child(2) {
+    animation-delay: 0.5s;
+    opacity: 1;
+}
+
+/* Testimonials */
+.testimonial-item {
+    animation: slideInUp 1.2s ease;
+    opacity: 0;
+}
+
+.testimonial-item:nth-child(1) {
+    animation-delay: 0.3s;
+    opacity: 1;
+}
+
+.testimonial-item:nth-child(2) {
+    animation-delay: 0.5s;
+    opacity: 1;
+}
+
+/* Contact */
+#contact {
+    animation: fadeIn 1.5s ease;
+}
+
+/* Footer */
+footer {
+    animation: fadeIn 1.5s ease 1s;
+}
+
+
+/* Header */
+header {
+    background: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #00c6ff;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #222;
+}
+
+#hero h2 {
+    font-size: 2em;
+    color: #1e88e5;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1e88e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #1565c0;
+}
+
+/* About Me */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #1e88e5;
+}
+
+/* Services */
+#services {
+    background: #1e1e1e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 20px;
+}
+
+.service-item h3 {
+    color: #1e88e5;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #1e1e1e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-item {
+    margin: 20px;
+    font-style: italic;
+}
+
+/* Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#contact ul li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+}
+
+footer a {
+    color: #1e88e5;
+    text-decoration: none;
+}
